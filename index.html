@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#030304" />
   <meta name="description" content="Welcome to Niki Top Circle. Discover two key member benefits, connect with the official member care team, and learn about your exclusive welcome reward." />
-  <title>Top Circle · A Special Welcome!</title>
+  <title>Top Circle · Welcome!</title>
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,24 +13,27 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="splash" id="welcomeSplash" role="dialog" aria-modal="true" aria-label="Welcome to Top Circle" hidden>
+    <div class="splash-grid" aria-hidden="true"></div>
+    <div class="splash-orbit" aria-hidden="true">
+      <div class="splash-ring splash-ring-outer"></div>
+      <div class="splash-ring splash-ring-inner"></div>
+      <div class="splash-disc"></div>
+      <span class="splash-spark spark-a"></span><span class="splash-spark spark-b"></span>
+    </div>
+    <div class="splash-content"><span class="splash-overline">NIKI · TOP CIRCLE</span><h2>Welcome to <span>Top Circle!</span></h2></div>
+    <button type="button" class="splash-skip" id="splashSkip">Skip <span aria-hidden="true">→</span></button>
+  </div>
   <div class="ambient ambient-top" aria-hidden="true"></div>
   <header class="site-header container">
     <a class="brand" href="#top" aria-label="Top Circle, back to top"><span class="brand-symbol" aria-hidden="true">TC</span><span class="brand-label">TOP <em>CIRCLE</em></span></a>
 
   </header>
   <main id="top">
-    <section class="hero container">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span>WELCOME TO TOP CIRCLE <span class="eyebrow-line"></span></div>
-        <h1>Welcome to <span class="gold-text">Top Circle!</span></h1>
-        <p class="hero-lead">Congratulations on becoming a member of Niki's <strong>Top Circle</strong>!</p>
-        <p class="hero-body">Discover your exclusive benefits, special rewards, and stay connected with our team.</p>
-
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="orbital orbital-outer"></div><div class="orbital orbital-inner"></div><div class="hero-core"></div>
-        <span class="star star-one"></span><span class="star star-two"></span><span class="star star-three"></span>
-      </div>
+    <section class="welcome-content container" aria-labelledby="welcome-heading">
+      <div class="welcome-accent" aria-hidden="true"></div>
+      <h1 id="welcome-heading">Congratulations on becoming a <span class="gold-text">Top Circle</span> member!</h1>
+      <p>As one of our valued members, you deserve something special. We're excited to welcome you and introduce the exclusive benefits and personalized services waiting for you!</p>
     </section>
     <section id="benefits" class="section container">
       <div class="section-head"><div class="kicker">MEMBER PRIVILEGES / 01</div><h2>Two Key <span class="gold-text">Top Circle Benefits</span></h2><p>Explore two of the special benefits available to Top Circle members.</p></div>
@@ -90,7 +93,6 @@
       </div>
     </section>
   </main>
-  <footer class="footer container"><span>TOP CIRCLE <span class="footer-dot">·</span> NIKI</span><span>Official Member Care · UID 73406762</span></footer>
 
   <script src="app.js" defer></script>
 </body>
