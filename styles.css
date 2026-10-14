@@ -376,3 +376,5 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 .connect-section{border-bottom:0}
 .tc-page-footer{padding-top:20px}
 @media(max-width:700px){.tc-page-footer{padding-top:18px}}
+/* V18: single understated gray footer divider; no gold footer line */
+.tc-footer-rule{background:rgba(255,255,255,.10)}
