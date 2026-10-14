@@ -1,8 +1,18 @@
-Top Circle Welcome V2
-Open index.html after extracting the ZIP.
-V2: hero copy layered over animated low-opacity orbital art; mobile overflow containment; duplicate nav/CTA and copy UID removed; official Niki profile direct link added.
-Official profile: https://d2tx70chhmzs07.cloudfront.net/jump/rd_mobile/tools/jump?type=imchat&params=773406762
-Birthday and custom gift links retained. Original English marketing copy retained.
-The more-benefits link is pending an official destination; no fake destination inserted.
+Top Circle Welcome V4
 
-V3: brighter orbital animation; birthday cake icon; condensed member care and reward copy; removed repetitive closing section.
+Deploy by uploading the CONTENTS of this folder into the ROOT of the GitHub repository (not the outer folder).
+Overwrite index.html, styles.css, app.js, and assets when prompted.
+
+Changes:
+- Condensed welcome hero, retained the animated gold orbit on mobile.
+- Preserved the two official benefits links.
+- Added sample avatar underneath original crystal avatar frame, marked preview only.
+- Official Niki CTA: Contact Us on Niki.
+- WhatsApp contacts moved to the end: Niki Sally and Niki Daodao.
+- Removed unpublished benefits page placeholder and redundant reward labels.
+
+Verify before publishing: phone-to-name mapping currently follows the order the two numbers were originally provided:
+Sally +86 186 4639 0081
+Daodao +86 181 0164 6112
+
+App deep-link should be tested from within Niki's in-app browser.
