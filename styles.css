@@ -230,11 +230,6 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 @media(prefers-reduced-motion:reduce){#benefits .benefit-tile,.contact-channel{transition:none;transform:none!important}}
 
 /* V11: compact row-aligned tiles, merged reward card, and subtle sheen */
-.sheen-card{position:relative;overflow:hidden;isolation:isolate}
-.sheen-card::before{content:"";position:absolute;top:-35%;bottom:-35%;left:-120%;width:55%;pointer-events:none;background:linear-gradient(115deg,transparent 0%,rgba(255,226,160,0.02) 32%,rgba(255,214,0,0.14) 48%,rgba(255,226,160,0.03) 63%,transparent 100%);transform:skewX(-18deg);animation:tc-sheen 8.5s ease-in-out infinite;z-index:0}
-.sheen-card > *{position:relative;z-index:1}
-@keyframes tc-sheen{0%,74%,100%{left:-130%}84%{left:115%}}
-
 #benefits .benefit-tile{min-height:136px;gap:14px;padding:18px 18px}
 #benefits .benefit-tile-top{display:flex;align-items:center;gap:12px;min-width:0}
 #benefits .benefit-tile-top h3{margin:0;font-size:clamp(15px,1.6vw,19px);line-height:1.28;overflow-wrap:anywhere}
@@ -303,4 +298,71 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
   .contact-channel{padding:12px 10px}
   .contact-channel .contact-v7-icon{width:36px;height:36px}
 }
-@media(prefers-reduced-motion:reduce){.sheen-card::before{animation:none!important}}
+
+
+
+/* V12 adjustments: benefits and reward switch to vertical layout on mobile-first */
+#benefits .benefit-tile-top{display:block}
+#benefits .benefit-tile-top h3{margin-top:12px}
+#benefits .benefit-tile{align-items:flex-start;justify-content:space-between;min-height:154px}
+#benefits .benefit-tile .icon-tile{width:46px;height:46px}
+
+.reward-bundle{padding:20px 18px 16px;max-width:780px}
+.reward-bundle-main{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.reward-bundle-visual{width:100%}
+.frame-preview-box{width:186px;height:186px;border-radius:22px;background:linear-gradient(160deg,#17191f,#121317)}
+.frame-preview-box .sample-avatar-small{inset:22%}
+.frame-preview-box .crystal-frame{inset:4%;width:92%;height:92%}
+.reward-bundle-copy{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.reward-bundle-copy h3{margin:0 0 8px;text-align:center}
+.reward-bundle-copy p{max-width:34ch;text-align:center}
+.reward-bundle-divider{margin:16px 0 12px}
+.reward-bundle-foot{align-items:flex-start}
+
+@media(min-width:701px){
+  /* desktop/tablet keep benefit cards a bit more open but still vertical */
+  #benefits .benefit-tile{min-height:168px;padding:18px}
+  #benefits .benefit-tile-top h3{font-size:clamp(18px,1.8vw,22px)}
+  .reward-bundle{padding:24px 24px 18px}
+  .frame-preview-box{width:210px;height:210px}
+}
+@media(max-width:700px){
+  #benefits .benefit-tile{min-height:150px;padding:14px 14px 13px}
+  #benefits .benefit-tile-top h3{font-size:15px;line-height:1.28;margin-top:12px}
+  .reward-bundle{padding:16px 14px 14px;border-radius:20px}
+  .reward-bundle-main{gap:12px}
+  .frame-preview-box{width:170px;height:170px}
+  .reward-bundle-copy h3{font-size:22px}
+  .reward-bundle-copy p{font-size:13px;line-height:1.45;max-width:28ch}
+  .reward-bundle-foot p{font-size:12px;line-height:1.45}
+}
+@media(max-width:380px){
+  .frame-preview-box{width:156px;height:156px}
+  #benefits .benefit-tile{min-height:144px;padding:13px 12px}
+}
+
+/* V14 — reward preview followed by two clearly labeled rule rows */
+.reward-bundle{max-width:780px}
+.reward-bundle-main{gap:10px}
+.reward-v14-rules{margin-top:18px;border-top:1px solid rgba(247,147,26,.29)}
+.reward-v14-rule{display:flex;align-items:flex-start;gap:13px;padding:16px 2px 2px}
+.reward-v14-rule+.reward-v14-rule{border-top:1px solid rgba(255,255,255,.10);margin-top:14px}
+.reward-v14-icon{display:grid;place-items:center;flex:0 0 35px;width:35px;height:35px;background:rgba(247,147,26,.11);border:1px solid rgba(247,147,26,.18);border-radius:10px;color:#FFD600;font-size:20px;line-height:1}
+.reward-v14-rule h4{margin:0 0 4px;color:#fff;font:700 15px/1.4 Inter,system-ui,sans-serif}
+.reward-v14-rule p{margin:0;color:#CBD1DC;font-size:14px;line-height:1.55}
+@media(max-width:700px){.reward-v14-rule{gap:10px;padding:13px 0 0}.reward-v14-rule+.reward-v14-rule{margin-top:13px}.reward-v14-icon{width:31px;height:31px;flex-basis:31px;font-size:17px}.reward-v14-rule h4{font-size:13px}.reward-v14-rule p{font-size:12.5px}.reward-v14-rules{margin-top:14px}}
+
+/* V15: compact contact cards; keep original copy and links */
+.contact-v10-header{margin-bottom:12px}
+.contact-v10-header h3{margin:0}
+.contact-channel{min-height:0!important;padding:15px 17px!important;gap:8px!important;justify-content:flex-start}
+.contact-channel .channel-head{gap:10px}
+.contact-channel .contact-v7-icon{width:38px!important;height:38px!important;flex:none}
+.contact-channel .channel-detail{line-height:1.4}
+.contact-channel .channel-action{margin-top:5px!important}
+@media(max-width:700px){
+.contact-channel{padding:12px 11px!important;gap:7px!important}
+.contact-channel .contact-v7-icon{width:34px!important;height:34px!important}
+.contact-channel .channel-head{gap:8px}
+.contact-channel .channel-action{margin-top:3px!important}
+}
