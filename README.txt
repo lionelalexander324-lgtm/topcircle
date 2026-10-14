@@ -1,15 +1,8 @@
-TOP CIRCLE - A Special Welcome (v1)
+Top Circle Welcome V2
+Open index.html after extracting the ZIP.
+V2: hero copy layered over animated low-opacity orbital art; mobile overflow containment; duplicate nav/CTA and copy UID removed; official Niki profile direct link added.
+Official profile: https://d2tx70chhmzs07.cloudfront.net/jump/rd_mobile/tools/jump?type=imchat&params=773406762
+Birthday and custom gift links retained. Original English marketing copy retained.
+The more-benefits link is pending an official destination; no fake destination inserted.
 
-Open index.html in a browser. No build system is needed.
-Contents: index.html, styles.css, app.js, assets/images, assets/icons.
-
-Includes a transparent WebP avatar frame preview converted from the supplied PNG.
-Both benefit links point to the user-supplied official detail pages.
-The WhatsApp phone numbers are clickable and Official UID has a copy button.
-
-PENDING BEFORE PUBLICATION:
-1. The general Top Circle benefits page URL was not supplied. The page uses
-   a non-clickable placeholder. Add the official benefits overview link later.
-2. Review business terms, eligibility, reward availability and copy.
-3. This first draft is English-only; full multi-language localization is not yet implemented.
-4. Verify render and opening of external pages in target Niki WebView.
+V3: brighter orbital animation; birthday cake icon; condensed member care and reward copy; removed repetitive closing section.

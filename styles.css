@@ -38,3 +38,18 @@ main, .site-header, .section, .footer {min-width:0;max-width:100%;}
   .closing{padding-block:48px 58px;}
 }
 @media(max-width:360px){.hero{min-height:530px;padding-block:50px 48px}.hero-art{width:116%;}.hero h1{font-size:36px;}}
+
+/* V3: clearer orbital system without overpowering hero copy */
+.hero-art{opacity:.52;}
+.hero-core{opacity:.18;}
+.orbital{border-width:1.5px;}
+.orbital-outer{border-color:rgba(247,147,26,.55);border-top-color:#fbb14a;border-bottom-color:#fbb14a;opacity:1;}
+.orbital-inner{border-color:rgba(255,214,0,.64);opacity:.95;}
+.hero .star{opacity:.6;}
+.reward-showcase h3{max-width:360px;margin-inline:auto;}
+.reward-showcase p{margin-bottom:0;}
+@media(max-width:700px){
+  .hero-art{opacity:.42;}
+  .orbital-outer{border-color:rgba(247,147,26,.7);border-top-color:#ffc065;border-bottom-color:#ffc065;}
+  .orbital-inner{border-color:rgba(255,214,0,.7);}
+}
