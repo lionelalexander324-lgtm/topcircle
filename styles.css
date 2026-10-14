@@ -372,3 +372,7 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 .tc-footer-rule{height:1px;background:linear-gradient(90deg,transparent,rgba(247,147,26,.38),transparent);width:100%;margin-bottom:24px}
 .tc-page-footer p{font:400 13px/1.6 'Inter',system-ui,sans-serif;color:#94A3B8;margin:0;overflow-wrap:anywhere}
 @media(max-width:700px){.tc-page-footer{padding-top:32px;padding-bottom:calc(30px + env(safe-area-inset-bottom,0px))}.tc-footer-rule{margin-bottom:18px}.tc-page-footer p{font-size:12px}}
+/* V17: remove duplicate divider above brand footer */
+.connect-section{border-bottom:0}
+.tc-page-footer{padding-top:20px}
+@media(max-width:700px){.tc-page-footer{padding-top:18px}}
