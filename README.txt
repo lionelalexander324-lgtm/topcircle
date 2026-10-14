@@ -1,6 +1,7 @@
-Top Circle Welcome V5
-
-Upload index.html, styles.css, app.js and assets/ to the root of the existing GitHub Pages repository.
-The welcome splash plays once per browser tab session (unless reduced motion is enabled), then shows the main page. Skip is available.
-All linked benefits and contact routes are retained from V4.
-Confirm that the WhatsApp names and phone numbers correspond to the intended team members before publication.
+Top Circle Welcome V6
+Deploy by uploading index.html, styles.css, app.js, locales/, and assets/ into the repository root.
+Languages: en, zh-TW, fil, es, vi, ms, fr, ar. Priority: URL ?lang= > saved user preference > browser language > English fallback.
+Arabic uses dir=rtl; UID and brand identifiers remain LTR.
+Rewards distributed Mondays UTC+8; completion on Monday rolls to following Monday.
+Official Niki link and two WhatsApp links are preserved.
+Translations are embedded in app.js for file:// offline viewing; locale JSON files are provided for easier review.
