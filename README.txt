@@ -7,3 +7,5 @@ Official Niki link and two WhatsApp links are preserved.
 Translations are embedded in app.js for file:// offline viewing; locale JSON files are provided for easier review.
 
 V8: Benefit cards now use icon-and-title inline headers, with tighter card spacing. All existing translations, links, reward terms, and contacts unchanged.
+
+V9: Unified Niki/WhatsApp button colors; contact block appears before avatar frame; arrow animations honor reduced-motion. All 8 languages preserved.

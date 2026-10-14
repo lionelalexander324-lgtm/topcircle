@@ -171,3 +171,30 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
   #benefits .benefit-card p{margin-bottom:10px}
 }
 @media(max-width:360px){#benefits .benefit-heading{gap:10px}#benefits .benefit-heading h3{font-size:16px}}
+
+/* V9: two consistent contact actions; subtle animated arrows; contact before frame */
+.contact-v7-option .profile-link,.contact-v7-option .contact-v7-whatsapp-btn{
+  display:flex;align-items:center;justify-content:center;gap:9px;min-height:50px;
+  font-family:'Inter',system-ui,sans-serif;font-size:14px;font-weight:700;
+  border-radius:999px;border:1px solid rgba(247,147,26,.60);
+  transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.contact-v7-option .profile-link{
+  background:linear-gradient(105deg,#EA580C,#F7931A 65%,#FFD600);color:#1B1208;
+}
+.contact-v7-option .contact-v7-whatsapp-btn{
+  background:linear-gradient(105deg,rgba(234,88,12,.20),rgba(247,147,26,.17));
+  color:#FFD18B;border-color:rgba(247,147,26,.75);
+}
+.contact-v7-option .contact-v7-whatsapp-btn:hover,
+.contact-v7-option .contact-v7-whatsapp-btn:focus-visible{
+  background:linear-gradient(105deg,rgba(234,88,12,.30),rgba(247,147,26,.25));
+  border-color:#FFD600;box-shadow:0 0 20px -8px rgba(247,147,26,.40);
+}
+.contact-action-arrow{display:inline-block;direction:ltr;unicode-bidi:isolate;transform:translate(0,0);
+  animation:tc-arrow-nudge 2.6s ease-in-out infinite;will-change:transform}
+@keyframes tc-arrow-nudge{0%,67%,100%{transform:translate(0,0)}77%{transform:translate(3px,-3px)}87%{transform:translate(0,0)}}
+.contact-action:focus-visible{outline:2px solid #FFD600;outline-offset:4px}
+[dir="rtl"] .contact-action{direction:rtl}
+[dir="rtl"] .contact-action-arrow{animation-name:tc-arrow-nudge}
+@media(prefers-reduced-motion:reduce){.contact-action-arrow{animation:none!important;will-change:auto}}
