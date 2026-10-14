@@ -14,7 +14,7 @@
   "giftBody": "يمكنك طلب <strong>هدية ثابتة مخصصة واحدة مجانًا</strong> صُممت خصيصًا لك.",
   "giftLink": "استكشف الهدية المخصصة ↗",
   "careKicker": "رعاية الأعضاء / 02",
-  "careTitle": "لنبقَ <span class=\"gold-text\">على تواصل!</span>",
+  "careTitle": "شاركنا رأيك <span class=\"gold-text\">واحصل على مكافأة!</span>",
   "careIntro": "يتواصل معك <strong>فريق رعاية أعضاء Top Circle</strong> للبقاء على اتصال ومعرفة تجربتك على Niki.",
   "eligTitle": "كيفية الحصول على المكافأة",
   "eligBody": "شارك بفاعلية في محادثاتنا وأجب عن أسئلتنا للحصول على إطار صورة شخصية حصري من Top Circle!",
@@ -35,5 +35,6 @@
   "contactIntroTitle": "تواصل معنا",
   "contactIntroBody": "اختر الطريقة التي تفضلها للتواصل مع فريقنا.",
   "waCTA": "تواصل معنا عبر واتساب",
-  "or": "أو"
+  "or": "أو",
+  "viewDetails": "عرض التفاصيل"
 }

@@ -14,7 +14,7 @@
   "giftBody": "Solicita <strong>un regalo estático personalizado gratuito</strong> hecho para ti.",
   "giftLink": "Ver regalo personalizado ↗",
   "careKicker": "ATENCIÓN A MIEMBROS / 02",
-  "careTitle": "¡Sigamos <span class=\"gold-text\">en contacto!</span>",
+  "careTitle": "Comparte tu opinión <span class=\"gold-text\">y recibe una recompensa</span>",
   "careIntro": "Nuestro <strong>equipo de atención a miembros de Top Circle</strong> está contactándote para mantener el contacto y conocer tu experiencia en Niki.",
   "eligTitle": "Cómo obtener tu recompensa",
   "eligBody": "Participa activamente en nuestras conversaciones y responde a nuestras preguntas para recibir un marco de avatar exclusivo de Top Circle.",
@@ -35,5 +35,6 @@
   "contactIntroTitle": "Ponte en contacto con nosotros",
   "contactIntroBody": "Elige cómo prefieres contactar con nuestro equipo.",
   "waCTA": "Contáctanos por WhatsApp",
-  "or": "O"
+  "or": "O",
+  "viewDetails": "Ver detalles"
 }

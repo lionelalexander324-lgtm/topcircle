@@ -14,7 +14,7 @@
   "giftBody": "可申請<strong>一款免費個人化靜態禮物</strong>，打造您的專屬風格。",
   "giftLink": "查看定製禮物權益 ↗",
   "careKicker": "會員關懷 / 02",
-  "careTitle": "讓我們<span class=\"gold-text\">保持聯繫！</span>",
+  "careTitle": "分享您的意見，<span class=\"gold-text\">領取專屬獎勵！</span>",
   "careIntro": "我們的 <strong>Top Circle 會員服務團隊</strong>正主動與您聯繫，希望了解您的 Niki 使用體驗並保持溝通。",
   "eligTitle": "如何獲得獎勵",
   "eligBody": "積極參與交流並回答我們的問題，即可獲得 Top Circle 專屬頭像框！",
@@ -35,5 +35,6 @@
   "contactIntroTitle": "與我們聯繫",
   "contactIntroBody": "選擇您方便的方式聯絡我們的團隊。",
   "waCTA": "在 WhatsApp 聯絡我們",
-  "or": "或"
+  "or": "或",
+  "viewDetails": "查看詳情"
 }

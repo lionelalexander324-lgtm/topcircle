@@ -14,7 +14,7 @@
   "giftBody": "Mohon <strong>satu hadiah statik diperibadikan secara percuma</strong> khas untuk anda.",
   "giftLink": "Lihat Hadiah Tersuai ↗",
   "careKicker": "KHIDMAT AHLI / 02",
-  "careTitle": "Mari <span class=\"gold-text\">Terus Berhubung!</span>",
+  "careTitle": "Kongsi Maklum Balas, <span class=\"gold-text\">Terima Ganjaran!</span>",
   "careIntro": "<strong>Pasukan Khidmat Ahli Top Circle</strong> sedang menghubungi anda untuk terus berhubung dan mengetahui pengalaman anda di Niki.",
   "eligTitle": "Cara Mendapatkan Ganjaran",
   "eligBody": "Sertai perbualan kami secara aktif dan jawab soalan kami untuk menerima Bingkai Avatar Top Circle eksklusif!",
@@ -35,5 +35,6 @@
   "contactIntroTitle": "Hubungi Kami",
   "contactIntroBody": "Pilih cara yang anda suka untuk menghubungi pasukan kami.",
   "waCTA": "Hubungi Kami melalui WhatsApp",
-  "or": "ATAU"
+  "or": "ATAU",
+  "viewDetails": "Lihat Butiran"
 }

@@ -14,7 +14,7 @@
   "giftBody": "Apply for <strong>one free personalized static gift</strong> made just for you.",
   "giftLink": "Explore Custom Gift Benefits ↗",
   "careKicker": "MEMBER CARE / 02",
-  "careTitle": "Let's Stay <span class='gold-text'>Connected!</span>",
+  "careTitle": "Share Your Feedback, <span class=\"gold-text\">Get Rewarded!</span>",
   "careIntro": "Our <strong>Top Circle Member Care Team</strong> is reaching out to stay connected with you and learn more about your Niki experience.",
   "eligTitle": "How to Get Your Reward",
   "eligBody": "Actively participate in our conversations and answer our questions to receive an exclusive Top Circle Avatar Frame!",
@@ -35,5 +35,6 @@
   "contactIntroTitle": "Get in Touch With Us",
   "contactIntroBody": "Choose your preferred way to contact our team.",
   "waCTA": "Contact Us on WhatsApp",
-  "or": "OR"
+  "or": "OR",
+  "viewDetails": "View Details"
 }
