@@ -132,3 +132,42 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 [dir="rtl"] .connect-intro{text-align:right}[dir="rtl"] .benefit-card{text-align:right}[dir="rtl"] .benefit-card .text-link{align-self:flex-start}[dir="rtl"] .rule-row{flex-direction:row}[dir="rtl"] .uid-line{direction:ltr;justify-content:flex-end}[dir="rtl"] .uid{direction:ltr;unicode-bidi:isolate}[dir="rtl"] .whatsapp-title{direction:rtl}[dir="rtl"] .brand,[dir="rtl"] .splash-overline{direction:ltr}[dir="rtl"] .benefit-card h3,[dir="rtl"] .benefit-card p{overflow-wrap:anywhere}
 @media(max-width:700px){.site-header{height:68px}.brand-label{font-size:13px;letter-spacing:.10em}.brand-symbol{width:34px;height:34px}.lang-wrap select{min-width:110px;max-width:137px;font-size:12px}.welcome-content{padding-block:28px 20px}.welcome-content h1{font-size:clamp(23px,7vw,32px)}.welcome-content p{font-size:14px;line-height:1.55}#benefits{padding-block:25px 37px}#benefits .section-head{margin-bottom:16px}#benefits h2{font-size:clamp(24px,7vw,30px)}.benefits-grid{gap:12px}.benefit-card{padding:17px 18px}.benefit-top{margin-bottom:8px}.icon-tile{width:38px;height:38px}.benefit-card h3{font-size:18px;margin-bottom:6px}.benefit-card p{font-size:13px;margin-bottom:10px;line-height:1.52}.benefit-card .text-link{font-size:13px}.connect-section{padding-block:35px 42px}.connect-intro h2{font-size:clamp(27px,8vw,34px)}.reward-rules{padding:14px;gap:10px}.rule-row{gap:10px}.rule-row h3{font-size:14px}.rule-row p{font-size:12.5px}.reward-showcase{padding:18px}.frame-stage{width:min(100%,270px)}.contact-card{padding:18px}.whatsapp-card{min-height:112px}.splash-subtitle{font-size:13px}}
 @media(max-width:360px){.brand-label{font-size:11px}.lang-wrap select{max-width:105px;min-width:100px;padding:6px}.container{width:calc(100% - 32px)}}
+
+/* V7: one unified contact module with Niki and Sally WhatsApp */
+.contact-v7{width:100%;max-width:740px;margin-inline:auto;display:flex;flex-direction:column;gap:0;min-width:0}
+.contact-v7-header{text-align:center;margin:8px 0 20px}
+.contact-v7-header h3{font-family:'Space Grotesk',sans-serif;font-size:clamp(22px,3.2vw,30px);margin:9px 0 5px;color:#fff}
+.contact-v7-header p{color:#94A3B8;font-size:14px;margin:0}
+.contact-v7-option{background:#0F1115;border:1px solid rgba(247,147,26,.27);border-radius:20px;padding:22px 26px;min-width:0}
+.contact-v7-meta{display:flex;align-items:center;gap:14px;margin-bottom:15px}
+.contact-v7-name{font-weight:700;color:#fff;font-size:18px}
+.contact-v7-detail{font-size:13px;color:#94A3B8;margin-top:3px}
+.contact-v7-detail b{font-family:'JetBrains Mono',monospace;color:#FFD79B;letter-spacing:.02em}
+.contact-v7-icon{display:flex;align-items:center;justify-content:center;flex:none;width:44px;height:44px;border:1px solid rgba(247,147,26,.3);border-radius:12px;color:#FFD600;background:#25180D;font-weight:750;font-size:21px}
+.whatsapp-v7-icon svg{width:23px;height:23px;fill:none;stroke:#F7931A;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.contact-v7-option .profile-link{margin:0;max-width:none}
+.contact-v7-whatsapp-btn{display:flex;justify-content:center;align-items:center;text-align:center;min-height:48px;padding:13px 18px;border-radius:999px;border:1px solid #F7931A;background:rgba(247,147,26,.06);color:#FFC36C;font-size:14px;font-weight:700;text-decoration:none;transition:background .2s,border-color .2s}
+.contact-v7-whatsapp-btn:hover{background:rgba(247,147,26,.15);border-color:#FFD600}
+.contact-v7-or{display:flex;gap:15px;align-items:center;justify-content:center;color:#94A3B8;font:600 11px 'JetBrains Mono',monospace;letter-spacing:.1em;padding:15px}
+.contact-v7-or:before,.contact-v7-or:after{content:'';height:1px;background:rgba(247,147,26,.2);flex:1}
+[dir=rtl] .contact-v7-meta{flex-direction:row}
+[dir=rtl] .contact-v7-detail b{unicode-bidi:isolate}
+@media(max-width:700px){.contact-v7-option{padding:18px}.contact-v7-header{margin-bottom:15px}.contact-v7-meta{gap:12px}.contact-v7-name{font-size:16px}.contact-v7-header h3{font-size:24px}}
+
+/* V8: compact horizontal icon and benefit title layout */
+#benefits .benefit-heading{display:flex;align-items:center;gap:13px;min-width:0;margin-bottom:11px}
+#benefits .benefit-heading .benefit-top{display:flex;align-items:center;flex:0 0 auto;margin:0}
+#benefits .benefit-heading .icon-tile{width:46px;height:46px;flex:0 0 46px}
+#benefits .benefit-heading h3{font-size:clamp(18px,1.75vw,22px);line-height:1.3;margin:0;min-width:0;overflow-wrap:anywhere}
+#benefits .benefit-card{padding:20px 22px}
+#benefits .benefit-card p{margin-bottom:13px}
+#benefits .benefits-grid{gap:14px}
+[dir="rtl"] #benefits .benefit-heading{flex-direction:row}
+@media(max-width:700px){
+  #benefits .benefit-heading{gap:12px;margin-bottom:9px}
+  #benefits .benefit-heading .icon-tile{width:44px;height:44px;flex-basis:44px}
+  #benefits .benefit-heading h3{font-size:17px;line-height:1.3}
+  #benefits .benefit-card{padding:17px 18px}
+  #benefits .benefit-card p{margin-bottom:10px}
+}
+@media(max-width:360px){#benefits .benefit-heading{gap:10px}#benefits .benefit-heading h3{font-size:16px}}

@@ -29,8 +29,11 @@
   "waHeading": "O MAKIPAG-UGNAYAN SA WHATSAPP",
   "chat": "Chat ↗",
   "waAriaSally": "Makipag-chat kay Niki Sally sa WhatsApp",
-  "waAriaDaodao": "Makipag-chat kay Niki Daodao sa WhatsApp",
   "language": "Wika",
   "pageTitle": "Top Circle · Welcome!",
-  "pageDescription": "Tuklasin ang mga benepisyo ng Top Circle at makipag-ugnayan sa aming team."
+  "pageDescription": "Tuklasin ang mga benepisyo ng Top Circle at makipag-ugnayan sa aming team.",
+  "contactIntroTitle": "Makipag-ugnayan sa Amin",
+  "contactIntroBody": "Piliin ang paraang pinakamadali para makausap ang aming team.",
+  "waCTA": "Makipag-ugnayan sa WhatsApp ↗",
+  "or": "O"
 }

@@ -29,8 +29,11 @@
   "waHeading": "ATAU HUBUNGI KAMI DI WHATSAPP",
   "chat": "Sembang ↗",
   "waAriaSally": "Sembang dengan Niki Sally di WhatsApp",
-  "waAriaDaodao": "Sembang dengan Niki Daodao di WhatsApp",
   "language": "Bahasa",
   "pageTitle": "Top Circle · Selamat Datang!",
-  "pageDescription": "Terokai manfaat Top Circle dan hubungi pasukan rasmi kami."
+  "pageDescription": "Terokai manfaat Top Circle dan hubungi pasukan rasmi kami.",
+  "contactIntroTitle": "Hubungi Kami",
+  "contactIntroBody": "Pilih cara yang anda suka untuk menghubungi pasukan kami.",
+  "waCTA": "Hubungi Kami melalui WhatsApp ↗",
+  "or": "ATAU"
 }

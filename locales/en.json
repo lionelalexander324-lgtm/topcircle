@@ -29,8 +29,11 @@
   "waHeading": "OR CONNECT WITH US ON WHATSAPP",
   "chat": "Chat ↗",
   "waAriaSally": "Chat with Niki Sally on WhatsApp",
-  "waAriaDaodao": "Chat with Niki Daodao on WhatsApp",
   "language": "Language",
   "pageTitle": "Top Circle · Welcome!",
-  "pageDescription": "Welcome to Top Circle. Explore your benefits, contact our official team, and learn about your avatar frame reward."
+  "pageDescription": "Welcome to Top Circle. Explore your benefits, contact our official team, and learn about your avatar frame reward.",
+  "contactIntroTitle": "Get in Touch With Us",
+  "contactIntroBody": "Choose your preferred way to contact our team.",
+  "waCTA": "Contact Us on WhatsApp ↗",
+  "or": "OR"
 }

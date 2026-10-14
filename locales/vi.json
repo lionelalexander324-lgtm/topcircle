@@ -29,8 +29,11 @@
   "waHeading": "HOẶC LIÊN HỆ QUA WHATSAPP",
   "chat": "Nhắn tin ↗",
   "waAriaSally": "Nhắn tin với Niki Sally qua WhatsApp",
-  "waAriaDaodao": "Nhắn tin với Niki Daodao qua WhatsApp",
   "language": "Ngôn ngữ",
   "pageTitle": "Top Circle · Chào mừng!",
-  "pageDescription": "Khám phá quyền lợi Top Circle và liên hệ đội ngũ chính thức."
+  "pageDescription": "Khám phá quyền lợi Top Circle và liên hệ đội ngũ chính thức.",
+  "contactIntroTitle": "Liên hệ với chúng tôi",
+  "contactIntroBody": "Chọn cách thuận tiện nhất để liên hệ với đội ngũ của chúng tôi.",
+  "waCTA": "Liên hệ qua WhatsApp ↗",
+  "or": "HOẶC"
 }

@@ -29,8 +29,11 @@
   "waHeading": "أو تواصل معنا عبر WHATSAPP",
   "chat": "دردشة ↗",
   "waAriaSally": "الدردشة مع Niki Sally عبر WhatsApp",
-  "waAriaDaodao": "الدردشة مع Niki Daodao عبر WhatsApp",
   "language": "اللغة",
   "pageTitle": "Top Circle · مرحبًا!",
-  "pageDescription": "اكتشف مزايا Top Circle وتواصل مع فريقنا الرسمي."
+  "pageDescription": "اكتشف مزايا Top Circle وتواصل مع فريقنا الرسمي.",
+  "contactIntroTitle": "تواصل معنا",
+  "contactIntroBody": "اختر الطريقة التي تفضلها للتواصل مع فريقنا.",
+  "waCTA": "تواصل معنا عبر واتساب ↗",
+  "or": "أو"
 }

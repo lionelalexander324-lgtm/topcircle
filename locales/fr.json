@@ -29,8 +29,11 @@
   "waHeading": "OU VIA WHATSAPP",
   "chat": "Discuter ↗",
   "waAriaSally": "Discuter avec Niki Sally sur WhatsApp",
-  "waAriaDaodao": "Discuter avec Niki Daodao sur WhatsApp",
   "language": "Langue",
   "pageTitle": "Top Circle · Bienvenue !",
-  "pageDescription": "Découvrez vos avantages Top Circle et contactez notre équipe officielle."
+  "pageDescription": "Découvrez vos avantages Top Circle et contactez notre équipe officielle.",
+  "contactIntroTitle": "Contactez-nous",
+  "contactIntroBody": "Choisissez le moyen de contacter notre équipe qui vous convient.",
+  "waCTA": "Contactez-nous sur WhatsApp ↗",
+  "or": "OU"
 }

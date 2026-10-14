@@ -5,3 +5,5 @@ Arabic uses dir=rtl; UID and brand identifiers remain LTR.
 Rewards distributed Mondays UTC+8; completion on Monday rolls to following Monday.
 Official Niki link and two WhatsApp links are preserved.
 Translations are embedded in app.js for file:// offline viewing; locale JSON files are provided for easier review.
+
+V8: Benefit cards now use icon-and-title inline headers, with tighter card spacing. All existing translations, links, reward terms, and contacts unchanged.

@@ -29,8 +29,11 @@
   "waHeading": "O CONTÁCTANOS POR WHATSAPP",
   "chat": "Chatear ↗",
   "waAriaSally": "Chatear con Niki Sally por WhatsApp",
-  "waAriaDaodao": "Chatear con Niki Daodao por WhatsApp",
   "language": "Idioma",
   "pageTitle": "Top Circle · ¡Bienvenido!",
-  "pageDescription": "Descubre tus beneficios y contacta con el equipo oficial de Top Circle."
+  "pageDescription": "Descubre tus beneficios y contacta con el equipo oficial de Top Circle.",
+  "contactIntroTitle": "Ponte en contacto con nosotros",
+  "contactIntroBody": "Elige cómo prefieres contactar con nuestro equipo.",
+  "waCTA": "Contáctanos por WhatsApp ↗",
+  "or": "O"
 }
