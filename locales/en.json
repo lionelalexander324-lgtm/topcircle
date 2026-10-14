@@ -14,7 +14,7 @@
   "giftBody": "Apply for <strong>one free personalized static gift</strong> made just for you.",
   "giftLink": "Explore Custom Gift Benefits ↗",
   "careKicker": "MEMBER CARE / 02",
-  "careTitle": "Share Your Feedback, <span class=\"gold-text\">Get Rewarded!</span>",
+  "careTitle": "Connect With Us & <span class=\"gold-text\">Get Rewarded!</span>",
   "careIntro": "Our <strong>Top Circle Member Care Team</strong> is reaching out to stay connected with you and learn more about your Niki experience.",
   "eligTitle": "How to Get Your Reward",
   "eligBody": "Actively participate in our conversations and answer our questions to receive an exclusive Top Circle Avatar Frame!",
@@ -31,10 +31,13 @@
   "waAriaSally": "Chat with Niki Sally on WhatsApp",
   "language": "Language",
   "pageTitle": "Top Circle · Welcome!",
-  "pageDescription": "Welcome to Top Circle. Explore your benefits, contact our official team, and learn about your avatar frame reward.",
-  "contactIntroTitle": "Get in Touch With Us",
+  "pageDescription": "Welcome to Top Circle. Explore your key benefits, connect with our official team, and learn about your avatar frame reward.",
+  "contactIntroTitle": "Contact Our Team",
   "contactIntroBody": "Choose your preferred way to contact our team.",
   "waCTA": "Contact Us on WhatsApp",
   "or": "OR",
-  "viewDetails": "View Details"
+  "viewDetails": "View Details",
+  "rewardTitlePlain": "Exclusive Avatar Frame",
+  "rewardLead": "Actively answer our questions to receive your reward.",
+  "scheduleInline": "Distributed every Monday (UTC+8). Completed on Monday? Reward arrives the following Monday."
 }

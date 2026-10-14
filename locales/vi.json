@@ -14,7 +14,7 @@
   "giftBody": "Đăng ký <strong>một quà tặng tĩnh được cá nhân hóa miễn phí</strong> dành riêng cho bạn.",
   "giftLink": "Xem quà tặng tùy chỉnh ↗",
   "careKicker": "CHĂM SÓC THÀNH VIÊN / 02",
-  "careTitle": "Chia sẻ ý kiến, <span class=\"gold-text\">nhận phần thưởng!</span>",
+  "careTitle": "Kết nối với chúng tôi và <span class=\"gold-text\">nhận thưởng!</span>",
   "careIntro": "<strong>Đội ngũ chăm sóc thành viên Top Circle</strong> đang chủ động liên hệ để giữ kết nối và tìm hiểu trải nghiệm của bạn trên Niki.",
   "eligTitle": "Cách nhận phần thưởng",
   "eligBody": "Tích cực tham gia trò chuyện và trả lời các câu hỏi của chúng tôi để nhận khung ảnh đại diện Top Circle độc quyền!",
@@ -32,9 +32,12 @@
   "language": "Ngôn ngữ",
   "pageTitle": "Top Circle · Chào mừng!",
   "pageDescription": "Khám phá quyền lợi Top Circle và liên hệ đội ngũ chính thức.",
-  "contactIntroTitle": "Liên hệ với chúng tôi",
+  "contactIntroTitle": "Liên hệ đội ngũ của chúng tôi",
   "contactIntroBody": "Chọn cách thuận tiện nhất để liên hệ với đội ngũ của chúng tôi.",
   "waCTA": "Liên hệ qua WhatsApp",
   "or": "HOẶC",
-  "viewDetails": "Xem chi tiết"
+  "viewDetails": "Xem chi tiết",
+  "rewardTitlePlain": "Khung ảnh đại diện độc quyền",
+  "rewardLead": "Hãy tích cực trả lời các câu hỏi của chúng tôi để nhận phần thưởng của bạn.",
+  "scheduleInline": "Phát thưởng vào mỗi thứ Hai (UTC+8). Nếu hoàn thành vào thứ Hai, bạn sẽ nhận thưởng vào thứ Hai tuần sau."
 }

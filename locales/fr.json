@@ -14,7 +14,7 @@
   "giftBody": "Demandez <strong>un cadeau statique personnalisé gratuit</strong> conçu pour vous.",
   "giftLink": "Voir les cadeaux personnalisés ↗",
   "careKicker": "SERVICE AUX MEMBRES / 02",
-  "careTitle": "Donnez votre avis, <span class=\"gold-text\">recevez une récompense !</span>",
+  "careTitle": "Restez en contact et <span class=\"gold-text\">recevez une récompense !</span>",
   "careIntro": "Notre <strong>équipe Top Circle Member Care</strong> vous contacte pour garder le lien et mieux connaître votre expérience sur Niki.",
   "eligTitle": "Comment obtenir votre récompense",
   "eligBody": "Participez activement à nos échanges et répondez à nos questions pour recevoir un cadre d’avatar Top Circle exclusif !",
@@ -32,9 +32,12 @@
   "language": "Langue",
   "pageTitle": "Top Circle · Bienvenue !",
   "pageDescription": "Découvrez vos avantages Top Circle et contactez notre équipe officielle.",
-  "contactIntroTitle": "Contactez-nous",
+  "contactIntroTitle": "Contactez notre équipe",
   "contactIntroBody": "Choisissez le moyen de contacter notre équipe qui vous convient.",
   "waCTA": "Contactez-nous sur WhatsApp",
   "or": "OU",
-  "viewDetails": "Voir les détails"
+  "viewDetails": "Voir les détails",
+  "rewardTitlePlain": "Cadre d’avatar exclusif",
+  "rewardLead": "Répondez activement à nos questions pour recevoir votre récompense.",
+  "scheduleInline": "Distribué chaque lundi (UTC+8). Terminé un lundi ? Votre récompense arrivera le lundi suivant."
 }

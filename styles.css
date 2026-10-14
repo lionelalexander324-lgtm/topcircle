@@ -228,3 +228,79 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 @media(max-width:700px){#benefits .benefit-tile{padding:14px 12px;min-height:148px;gap:8px}#benefits .benefit-tile h3{font-size:15px}#benefits .benefit-tile-action{font-size:11px}#benefits .benefit-tile .icon-tile{width:39px;height:39px}.reward-showcase{padding:13px;gap:12px}.reward-showcase .frame-stage{width:clamp(120px,37vw,155px)}.reward-showcase .showcase-heading h3{font-size:18px}.contact-channel{padding:15px 12px;min-height:164px}.contact-v10-grid{gap:10px}.contact-channel strong{font-size:15px}.channel-action{font-size:11px}.channel-detail{font-size:11px}}
 @media(max-width:360px){.reward-showcase{gap:8px}.reward-showcase .frame-stage{width:118px}#benefits .benefit-tile{padding:12px 10px}.contact-channel{padding:12px 10px}}
 @media(prefers-reduced-motion:reduce){#benefits .benefit-tile,.contact-channel{transition:none;transform:none!important}}
+
+/* V11: compact row-aligned tiles, merged reward card, and subtle sheen */
+.sheen-card{position:relative;overflow:hidden;isolation:isolate}
+.sheen-card::before{content:"";position:absolute;top:-35%;bottom:-35%;left:-120%;width:55%;pointer-events:none;background:linear-gradient(115deg,transparent 0%,rgba(255,226,160,0.02) 32%,rgba(255,214,0,0.14) 48%,rgba(255,226,160,0.03) 63%,transparent 100%);transform:skewX(-18deg);animation:tc-sheen 8.5s ease-in-out infinite;z-index:0}
+.sheen-card > *{position:relative;z-index:1}
+@keyframes tc-sheen{0%,74%,100%{left:-130%}84%{left:115%}}
+
+#benefits .benefit-tile{min-height:136px;gap:14px;padding:18px 18px}
+#benefits .benefit-tile-top{display:flex;align-items:center;gap:12px;min-width:0}
+#benefits .benefit-tile-top h3{margin:0;font-size:clamp(15px,1.6vw,19px);line-height:1.28;overflow-wrap:anywhere}
+#benefits .benefit-tile .icon-tile{width:44px;height:44px;flex:none}
+#benefits .benefit-tile-action{margin-top:auto}
+
+.connect-flow{gap:18px}
+.connect-intro p{max-width:740px;margin-bottom:0}
+.reward-bundle{width:100%;max-width:850px;margin-inline:auto;padding:20px 20px 16px;border:1px solid rgba(247,147,26,.28);border-radius:22px;background:linear-gradient(135deg,rgba(247,147,26,.08),rgba(15,17,21,.97) 46%)}
+.reward-bundle-main{display:grid;grid-template-columns:172px minmax(0,1fr);gap:20px;align-items:center}
+.reward-bundle-visual{display:flex;justify-content:center;align-items:center}
+.frame-preview-box{position:relative;width:154px;height:154px;border-radius:18px;background:linear-gradient(160deg,#1A1C22,#17181C);display:grid;place-items:center;overflow:hidden}
+.frame-preview-box .sample-avatar-small{position:absolute;inset:24%}
+.frame-preview-box .sample-avatar-small img{width:100%;height:100%;object-fit:contain;filter:grayscale(1) brightness(.92)}
+.frame-preview-box .crystal-frame{position:absolute;inset:8%;width:84%;height:84%;object-fit:contain;filter:drop-shadow(0 8px 22px rgba(247,147,26,.26))}
+.reward-bundle-copy h3{margin:0 0 10px;font-size:clamp(24px,3vw,30px);letter-spacing:-.03em;color:#FFD600;font-family:'Space Grotesk',sans-serif}
+.reward-bundle-copy p{margin:0;color:#E4DDD4;font-size:15px;line-height:1.6;max-width:42ch}
+.reward-bundle-divider{height:1px;background:rgba(247,147,26,.35);margin:18px 0 14px}
+.reward-bundle-foot{display:flex;align-items:flex-start;gap:10px;color:#E8DED0}
+.reward-foot-icon{display:grid;place-items:center;flex:none;width:28px;height:28px;border-radius:9px;background:rgba(247,147,26,.12);color:#FFD600;font-size:16px;line-height:1;border:1px solid rgba(247,147,26,.22)}
+.reward-bundle-foot p{margin:0;font-size:14px;line-height:1.55;color:#DDD3C2}
+
+.contact-v11,.contact-v10{width:100%;max-width:850px;margin-inline:auto}
+.contact-v10-header{margin-bottom:12px}
+.contact-v10-header p{display:none}
+.contact-v10-grid{gap:14px}
+.contact-channel{min-height:145px;padding:18px 18px 16px;gap:10px}
+.channel-head{display:flex;align-items:center;gap:12px;min-width:0}
+.channel-head strong{font-size:18px;line-height:1.2;margin:0}
+.contact-channel > strong{display:none}
+.contact-channel .contact-v7-icon{width:46px;height:46px}
+.channel-detail{font-size:13px;line-height:1.45}
+.channel-action{margin-top:auto;font-size:13px}
+
+[dir="rtl"] .reward-bundle-main{grid-template-columns:minmax(0,1fr) 172px}
+[dir="rtl"] .reward-bundle-copy{text-align:right}
+[dir="rtl"] .reward-bundle-foot{flex-direction:row}
+[dir="rtl"] .channel-head{flex-direction:row}
+
+@media(max-width:700px){
+  #benefits .benefit-tile{min-height:128px;padding:14px 12px;gap:12px}
+  #benefits .benefit-tile-top{gap:10px;align-items:flex-start}
+  #benefits .benefit-tile .icon-tile{width:40px;height:40px}
+  #benefits .benefit-tile-top h3{font-size:14px;line-height:1.25}
+  #benefits .benefit-tile-action{font-size:12px}
+  .reward-bundle{padding:16px 16px 14px;border-radius:20px}
+  .reward-bundle-main{grid-template-columns:98px minmax(0,1fr);gap:14px;align-items:center}
+  .frame-preview-box{width:94px;height:94px;border-radius:16px}
+  .reward-bundle-copy h3{font-size:18px;margin-bottom:8px}
+  .reward-bundle-copy p{font-size:13px;line-height:1.5}
+  .reward-bundle-divider{margin:14px 0 12px}
+  .reward-bundle-foot p{font-size:12.5px;line-height:1.5}
+  .reward-foot-icon{width:24px;height:24px;font-size:14px;border-radius:8px}
+  .contact-v10-header h3{font-size:clamp(21px,7vw,30px)}
+  .contact-v10-grid{gap:10px}
+  .contact-channel{min-height:138px;padding:14px 12px}
+  .channel-head{gap:10px}
+  .channel-head strong{font-size:15px}
+  .contact-channel .contact-v7-icon{width:40px;height:40px}
+  .channel-detail{font-size:11px}
+  .channel-action{font-size:11.5px;line-height:1.35}
+}
+@media(max-width:360px){
+  .reward-bundle-main{grid-template-columns:84px minmax(0,1fr)}
+  .frame-preview-box{width:82px;height:82px}
+  .contact-channel{padding:12px 10px}
+  .contact-channel .contact-v7-icon{width:36px;height:36px}
+}
+@media(prefers-reduced-motion:reduce){.sheen-card::before{animation:none!important}}

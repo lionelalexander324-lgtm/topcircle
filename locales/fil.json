@@ -14,7 +14,7 @@
   "giftBody": "Mag-apply para sa <strong>isang libreng personalized static gift</strong> na para sa iyo.",
   "giftLink": "Tingnan ang Custom Gift Benefits ↗",
   "careKicker": "MEMBER CARE / 02",
-  "careTitle": "Ibahagi ang Feedback, <span class=\"gold-text\">Makatanggap ng Gantimpala!</span>",
+  "careTitle": "Makipag-ugnayan at <span class=\"gold-text\">Makatanggap ng Reward!</span>",
   "careIntro": "Nakikipag-ugnayan ang aming <strong>Top Circle Member Care Team</strong> upang manatiling konektado at malaman ang iyong karanasan sa Niki.",
   "eligTitle": "Paano Makukuha ang Reward",
   "eligBody": "Aktibong makilahok sa aming usapan at sagutin ang aming mga tanong upang makatanggap ng exclusive Top Circle Avatar Frame!",
@@ -32,9 +32,12 @@
   "language": "Wika",
   "pageTitle": "Top Circle · Welcome!",
   "pageDescription": "Tuklasin ang mga benepisyo ng Top Circle at makipag-ugnayan sa aming team.",
-  "contactIntroTitle": "Makipag-ugnayan sa Amin",
+  "contactIntroTitle": "Makipag-ugnayan sa Aming Team",
   "contactIntroBody": "Piliin ang paraang pinakamadali para makausap ang aming team.",
   "waCTA": "Makipag-ugnayan sa WhatsApp",
   "or": "O",
-  "viewDetails": "Tingnan ang Detalye"
+  "viewDetails": "Tingnan ang Detalye",
+  "rewardTitlePlain": "Exclusive Avatar Frame",
+  "rewardLead": "Aktibong sagutin ang aming mga tanong upang matanggap ang iyong reward.",
+  "scheduleInline": "Ipinapamahagi tuwing Lunes (UTC+8). Kung natapos ang usapan sa Lunes, darating ang reward sa susunod na Lunes."
 }

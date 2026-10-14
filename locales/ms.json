@@ -14,7 +14,7 @@
   "giftBody": "Mohon <strong>satu hadiah statik diperibadikan secara percuma</strong> khas untuk anda.",
   "giftLink": "Lihat Hadiah Tersuai ↗",
   "careKicker": "KHIDMAT AHLI / 02",
-  "careTitle": "Kongsi Maklum Balas, <span class=\"gold-text\">Terima Ganjaran!</span>",
+  "careTitle": "Hubungi kami & <span class=\"gold-text\">terima ganjaran!</span>",
   "careIntro": "<strong>Pasukan Khidmat Ahli Top Circle</strong> sedang menghubungi anda untuk terus berhubung dan mengetahui pengalaman anda di Niki.",
   "eligTitle": "Cara Mendapatkan Ganjaran",
   "eligBody": "Sertai perbualan kami secara aktif dan jawab soalan kami untuk menerima Bingkai Avatar Top Circle eksklusif!",
@@ -32,9 +32,12 @@
   "language": "Bahasa",
   "pageTitle": "Top Circle · Selamat Datang!",
   "pageDescription": "Terokai manfaat Top Circle dan hubungi pasukan rasmi kami.",
-  "contactIntroTitle": "Hubungi Kami",
+  "contactIntroTitle": "Hubungi pasukan kami",
   "contactIntroBody": "Pilih cara yang anda suka untuk menghubungi pasukan kami.",
   "waCTA": "Hubungi Kami melalui WhatsApp",
   "or": "ATAU",
-  "viewDetails": "Lihat Butiran"
+  "viewDetails": "Lihat Butiran",
+  "rewardTitlePlain": "Bingkai Avatar Eksklusif",
+  "rewardLead": "Jawab soalan kami secara aktif untuk menerima ganjaran anda.",
+  "scheduleInline": "Diagihkan setiap hari Isnin (UTC+8). Jika selesai pada hari Isnin, ganjaran anda akan tiba pada Isnin berikutnya."
 }
