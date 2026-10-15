@@ -52,3 +52,10 @@ V38 Member Care headline and introduction:
 - Updated the title and introduction in all eight languages
 - Kept the short gold reward phrase together without manual line breaks
 - Tuned the mobile headline size for natural wrapping from 320 px upward
+
+V39 Member Care eligibility and contact actions:
+- Added a centered eligibility badge for users who newly became Top Circle members in October 2026
+- Localized the eligibility restriction across the existing eight languages only
+- Positioned the badge between the avatar-frame preview and the connection-task instructions
+- Restyled the Niki and WhatsApp entries as compact borderless buttons with larger icons and clearer hover feedback
+- Preserved the existing links, side-by-side layout, reward rules, and all non-Member-Care sections
