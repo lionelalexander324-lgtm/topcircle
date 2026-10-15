@@ -66,3 +66,10 @@ V40 inline Member Care eligibility notice:
 - Replaced the badge treatment with a plain, left-aligned, soft-gold line at font-weight 700
 - Forced the eligibility copy to remain on one line and hid its calendar icon on mobile
 - Tuned narrow-screen typography to preserve the full localized sentence without horizontal overflow
+
+V41 Member Care instruction-copy alignment:
+- Aligned both instruction lines to the rule container edge while keeping the heading position unchanged
+- Restored a subtle gold-brown highlight behind the eligibility text only
+- Reduced only the internal gap between the eligibility and helper lines by 5 px on mobile
+- Updated the helper sentence across all eight supported languages
+- Preserved the surrounding spacing, task cards, contact buttons, and non-Member-Care sections

@@ -1264,3 +1264,34 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
     letter-spacing:-.035em;
   }
 }
+
+/* V41 align the two instruction lines to the rule container and tighten only their inner gap. */
+.member-eligibility-badge{
+  margin-bottom:2px;
+  max-width:none;
+}
+.member-eligibility-badge > [data-i18n="memberEligibility"]{
+  display:inline-block;
+  padding-inline:3px;
+  margin-inline:-3px;
+  border-radius:3px;
+  background:rgba(154,96,22,.22);
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+}
+.reward-methods-intro{margin-top:0}
+@media(min-width:701px){
+  .reward-v14-rule:first-child > div > .member-eligibility-badge,
+  .reward-v14-rule:first-child > div > .reward-methods-intro{
+    width:calc(100% + 50px);
+    margin-inline-start:-50px;
+  }
+}
+@media(max-width:700px){
+  .reward-v14-rule:first-child > div > .member-eligibility-badge,
+  .reward-v14-rule:first-child > div > .reward-methods-intro{
+    grid-column:1 / -1;
+  }
+  .member-eligibility-badge{margin-bottom:1px}
+  .reward-v14-rule:first-child .reward-methods-intro{margin-top:-5px}
+}
