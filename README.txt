@@ -26,3 +26,4 @@ V33 specification compliance fixes:
 - Loading, success, failure, English fallback, and retry states are visible and accessible
 - Arabic switches the document to RTL; failed locale loads reset consistently to English/LTR
 - Interactive controls meet the 44 px touch-target requirement and include press feedback
+- Localized contact labels wrap within their cards at 320–430 px without clipping or overlap
