@@ -1220,3 +1220,47 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
   .reward-step-card--direct .whatsapp-v7-icon svg{width:18px;height:18px}
   .reward-step-card--direct .channel-head strong{font-size:12px}
 }
+
+/* V40 inline eligibility notice below the task heading. */
+.member-eligibility-badge{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:7px;
+  width:100%;
+  max-width:100%;
+  margin:3px 0 7px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:none;
+  box-shadow:none;
+  color:#EFC46F;
+  font:700 13.5px/1.35 Inter,system-ui,sans-serif;
+  text-align:start;
+  white-space:nowrap;
+}
+.member-eligibility-icon{
+  display:grid;
+  place-items:center;
+  flex:0 0 17px;
+  width:17px;
+  height:17px;
+}
+.member-eligibility-icon svg{width:16px;height:16px}
+@media(max-width:700px){
+  .reward-v14-rule:first-child > div > .member-eligibility-badge{grid-column:2}
+  .member-eligibility-badge{
+    gap:0;
+    margin:2px 0 6px;
+    font-size:clamp(10.5px,2.9vw,11.5px);
+    letter-spacing:-.02em;
+  }
+  .member-eligibility-icon{display:none}
+}
+@media(max-width:360px){
+  .member-eligibility-badge{
+    font-size:clamp(9.5px,2.95vw,10.5px);
+    letter-spacing:-.035em;
+  }
+}

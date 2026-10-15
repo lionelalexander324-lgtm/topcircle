@@ -59,3 +59,10 @@ V39 Member Care eligibility and contact actions:
 - Positioned the badge between the avatar-frame preview and the connection-task instructions
 - Restyled the Niki and WhatsApp entries as compact borderless buttons with larger icons and clearer hover feedback
 - Preserved the existing links, side-by-side layout, reward rules, and all non-Member-Care sections
+
+V40 inline Member Care eligibility notice:
+- Removed the year from the eligibility restriction in all eight supported languages
+- Moved the notice directly below the connection-task heading and before its explanatory copy
+- Replaced the badge treatment with a plain, left-aligned, soft-gold line at font-weight 700
+- Forced the eligibility copy to remain on one line and hid its calendar icon on mobile
+- Tuned narrow-screen typography to preserve the full localized sentence without horizontal overflow
