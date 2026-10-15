@@ -46,3 +46,9 @@ V36 unified card rows:
 
 V37 copy cleanup:
 - Removed the Official Niki Profile subtitle from the official profile card in every language
+
+V38 Member Care headline and introduction:
+- Reframed the message around completing the conversation before earning the reward
+- Updated the title and introduction in all eight languages
+- Kept the short gold reward phrase together without manual line breaks
+- Tuned the mobile headline size for natural wrapping from 320 px upward

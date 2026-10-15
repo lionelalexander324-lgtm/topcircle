@@ -1129,3 +1129,15 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
   .reward-step-card--direct .contact-v7-icon{width:22px!important;height:22px!important}
   .reward-step-card--direct .channel-head strong{font-size:12px}
 }
+
+/* V38 Member Care headline wrapping: keep the reward phrase intact. */
+.connect-intro h2 .gold-text{
+  display:inline-block;
+  white-space:nowrap;
+}
+@media(max-width:700px){
+  .connect-intro h2{font-size:clamp(25px,7.5vw,34px)}
+}
+@media(max-width:360px){
+  .connect-intro h2{font-size:clamp(24px,7.3vw,28px)}
+}
