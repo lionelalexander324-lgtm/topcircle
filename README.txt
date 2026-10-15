@@ -43,3 +43,6 @@ V36 unified card rows:
 - Kept both contact cards equal at 72–78 px high and preserved their original links
 - Kept the official profile text and image side-by-side on desktop and mobile
 - Updated the affected labels in all eight languages
+
+V37 copy cleanup:
+- Removed the Official Niki Profile subtitle from the official profile card in every language
