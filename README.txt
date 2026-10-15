@@ -27,3 +27,19 @@ V33 specification compliance fixes:
 - Arabic switches the document to RTL; failed locale loads reset consistently to English/LTR
 - Interactive controls meet the 44 px touch-target requirement and include press feedback
 - Localized contact labels wrap within their cards at 320–430 px without clipping or overlap
+- Member Care now presents two alternative connection methods, a compact official-profile reference image, simplified contact cards, and synchronized copy in all eight languages
+
+V35 Member Care refinements:
+- Shortened the section and Method 01 headings in all eight languages
+- Removed the secondary descriptions from the Niki and WhatsApp contact cards
+- Centered both channel names and actions in equal-width, equal-height cards
+- Vertically aligned the task heading with its bullet icon
+- Kept Method 01 side-by-side on desktop and stacked its text above the official profile image on phones
+
+V36 unified card rows:
+- Rebuilt the official Niki profile reference as a compact horizontal information card
+- Matched its rendered left and right edges to the two-card contact row at every tested width
+- Reduced Niki and WhatsApp cards to one centered icon, platform name, and external-link arrow row
+- Kept both contact cards equal at 72–78 px high and preserved their original links
+- Kept the official profile text and image side-by-side on desktop and mobile
+- Updated the affected labels in all eight languages

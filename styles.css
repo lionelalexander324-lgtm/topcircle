@@ -744,3 +744,388 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 @media(max-width:360px){
   .reward-step-card--direct .channel-head strong{font-size:11.5px}
 }
+
+/* V34 Member Care task choice, official profile preview, and compact contacts. */
+.reward-methods-intro{
+  margin:4px 0 0;
+  color:#CBD1DC;
+  font-size:14px;
+  line-height:1.55;
+}
+.reward-step-card--team,
+.reward-step-card--direct{
+  background:rgba(255,255,255,.025);
+  border-color:rgba(247,147,26,.28);
+  box-shadow:none;
+}
+.reward-step-card--team .step-content{
+  display:grid;
+  grid-template-columns:minmax(0,72fr) minmax(120px,28fr);
+  align-items:center;
+  gap:20px;
+  direction:ltr;
+}
+.reward-step-card--team .method-copy{min-width:0;direction:ltr}
+[dir="rtl"] .reward-step-card--team .method-copy{direction:rtl;text-align:right}
+.official-profile-media{
+  width:100%;
+  max-width:190px;
+  margin:0;
+  justify-self:end;
+}
+.official-profile-media img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:4 / 3;
+  object-fit:contain;
+  border:1px solid rgba(255,214,0,.42);
+  border-radius:14px;
+  background:#090704;
+  box-shadow:0 0 18px -10px rgba(255,214,0,.55);
+}
+.method-or{
+  display:grid;
+  grid-template-columns:minmax(24px,1fr) auto minmax(24px,1fr);
+  align-items:center;
+  gap:10px;
+  margin:-2px 4px;
+}
+.method-or > span{height:1px;background:linear-gradient(90deg,transparent,rgba(255,214,0,.62))}
+.method-or > span:last-child{background:linear-gradient(90deg,rgba(255,214,0,.62),transparent)}
+.method-or b{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:42px;
+  min-height:28px;
+  padding:4px 12px;
+  border:1px solid rgba(255,214,0,.42);
+  border-radius:999px;
+  background:rgba(247,147,26,.08);
+  color:#FFD600;
+  font:700 11px/1 'JetBrains Mono',monospace;
+  letter-spacing:.08em;
+}
+.contact-choice-heading{
+  margin:2px 0 10px;
+  color:#F2E7D5;
+  font:600 13px/1.4 Inter,system-ui,sans-serif;
+}
+.reward-step-card--direct .contact-channel{
+  min-height:0!important;
+  padding:14px!important;
+  gap:7px!important;
+}
+.reward-step-card--direct .channel-head{gap:9px}
+.reward-step-card--direct .contact-v7-icon{width:34px!important;height:34px!important}
+.reward-step-card--direct .channel-head strong{font-size:17px}
+.channel-description{
+  flex:1;
+  margin:0;
+  color:#AEB8C8;
+  font-size:12px;
+  line-height:1.45;
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:auto;
+}
+.reward-step-card--direct .channel-action{font-size:12.5px}
+[dir="rtl"] .channel-description{text-align:right}
+
+@media(max-width:700px){
+  .reward-methods-intro{font-size:12.5px}
+  .reward-step-card--team .step-content{
+    grid-template-columns:minmax(0,62fr) minmax(82px,38fr);
+    gap:10px;
+  }
+  .official-profile-media{max-width:120px}
+  .official-profile-media img{border-radius:12px}
+  .reward-step-card--direct .step-content > .contact-choice-heading{grid-column:2}
+  .reward-step-card--direct .contact-channel{padding:11px 9px!important;gap:6px!important}
+  .reward-step-card--direct .contact-v7-icon{width:26px!important;height:26px!important}
+  .reward-step-card--direct .channel-head{gap:5px}
+  .reward-step-card--direct .channel-head strong{font-size:clamp(12px,3.5vw,15px)}
+  .channel-description{font-size:10.5px;line-height:1.38}
+  .reward-step-card--direct .channel-action{font-size:11px}
+}
+@media(max-width:360px){
+  .reward-step-card--team{padding-inline:10px}
+  .reward-step-card--team .step-content{
+    grid-template-columns:minmax(0,60fr) minmax(72px,40fr);
+    gap:8px;
+  }
+  .official-profile-media{max-width:96px}
+  .reward-step-card--direct .contact-channel{padding-inline:7px!important}
+  .reward-step-card--direct .contact-v7-icon{width:20px!important;height:20px!important}
+  .channel-description{font-size:10px}
+  .reward-step-card--direct .channel-action{font-size:10.5px}
+}
+
+/* V34 narrow-screen width recovery: keep both methods readable and side-by-side. */
+@media(max-width:700px){
+  .reward-v14-rule:first-child{
+    display:grid;
+    grid-template-columns:31px minmax(0,1fr);
+    column-gap:10px;
+  }
+  .reward-v14-rule:first-child > div{display:contents}
+  .reward-v14-rule:first-child > div > h4,
+  .reward-v14-rule:first-child > div > .reward-methods-intro{grid-column:2}
+  .reward-v14-rule:first-child > div > .reward-methods{
+    grid-column:1 / -1;
+    width:100%;
+  }
+  .reward-step-card{
+    position:relative;
+    display:block;
+  }
+  .reward-step-card .step-number{
+    position:absolute;
+    top:14px;
+    left:12px;
+    z-index:1;
+  }
+  .reward-step-card .step-content{
+    display:block;
+    width:100%;
+  }
+  .reward-step-card--team .step-content{
+    display:grid;
+    grid-template-columns:minmax(0,62fr) minmax(82px,38fr);
+    gap:10px;
+  }
+  .reward-step-card--team .method-copy > strong,
+  .reward-step-card--direct .step-content > strong{
+    min-height:30px;
+    padding-left:42px;
+  }
+  .reward-step-card--direct .step-content > .contact-choice-heading,
+  .reward-step-card--direct #official-contact{width:100%}
+}
+@media(max-width:360px){
+  .reward-step-card--team .step-content{
+    grid-template-columns:minmax(0,61fr) minmax(76px,39fr);
+    gap:8px;
+  }
+  .reward-step-card .step-number{left:10px}
+  .reward-step-card--team .method-copy > strong,
+  .reward-step-card--direct .step-content > strong{padding-left:40px}
+}
+.reward-step-card--direct .channel-action > span:first-child{
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:none;
+}
+
+/* V35 Member Care refinement: balanced headings, equal contact cards, mobile stack. */
+.reward-v14-rule:first-child > div > h4{
+  min-height:35px;
+  display:flex;
+  align-items:center;
+}
+.reward-step-card--direct .contact-v10-grid{
+  align-items:stretch;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.reward-step-card--direct .contact-channel{
+  min-height:104px!important;
+  height:100%;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:14px 12px!important;
+  gap:10px!important;
+}
+.reward-step-card--direct .channel-head{
+  width:100%;
+  justify-content:center;
+  align-items:center;
+}
+.reward-step-card--direct .channel-action{
+  display:flex;
+  width:100%;
+  margin-top:0!important;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+  text-align:center;
+}
+.reward-step-card--direct .contact-action-arrow{align-self:center}
+
+@media(max-width:700px){
+  .reward-v14-rule:first-child > div > h4{min-height:31px}
+  .reward-step-card--team .step-content{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:14px;
+  }
+  .reward-step-card--team .method-copy{width:100%}
+  .official-profile-media{
+    width:clamp(150px,56vw,220px);
+    max-width:100%;
+    margin-inline:auto;
+    justify-self:auto;
+  }
+  .reward-step-card--direct .contact-channel{
+    min-height:92px!important;
+    padding:12px 8px!important;
+    gap:8px!important;
+  }
+}
+@media(max-width:360px){
+  .official-profile-media{width:clamp(140px,55vw,180px)}
+  .reward-step-card--direct .contact-channel{min-height:88px!important}
+}
+
+/* V36 unified Member Care profile and contact rows. */
+.reward-step-card--team,
+.reward-step-card--direct{
+  padding-inline:20px;
+}
+.reward-step-card--team .step-content{
+  display:block;
+  width:100%;
+}
+.official-profile-card{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(120px,168px);
+  align-items:center;
+  gap:18px;
+  width:100%;
+  margin-top:16px;
+  padding:12px 14px;
+  border:1px solid rgba(247,147,26,.32);
+  border-radius:16px;
+  background:rgba(8,10,14,.62);
+}
+.official-profile-copy{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:4px;
+  color:#AEB8C8;
+  font-size:12px;
+  line-height:1.4;
+  text-align:left;
+}
+.official-profile-copy > b{
+  max-width:100%;
+  color:#fff;
+  font-size:16px;
+  line-height:1.25;
+  overflow-wrap:anywhere;
+}
+.official-profile-copy > span:last-child{
+  color:#CBD1DC;
+  white-space:nowrap;
+}
+.official-profile-copy > span:last-child strong{
+  display:inline;
+  margin:0;
+  color:#FFD79B;
+  font:700 12px/1.4 'JetBrains Mono',monospace;
+}
+.official-profile-media{
+  width:100%;
+  max-width:168px;
+  margin:0;
+  justify-self:end;
+}
+.official-profile-media img{
+  border-radius:10px;
+  box-shadow:none;
+}
+[dir="rtl"] .official-profile-copy{
+  align-items:flex-start;
+  direction:ltr;
+  text-align:left;
+}
+.contact-choice-heading{
+  width:100%;
+  margin:2px 0 10px;
+  text-align:left;
+}
+[dir="rtl"] .contact-choice-heading{text-align:right}
+.reward-step-card--direct .contact-v10-grid{
+  width:100%;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.reward-step-card--direct .contact-channel{
+  min-height:78px!important;
+  height:78px;
+  padding:12px!important;
+  justify-content:center;
+  gap:0!important;
+  border-color:rgba(247,147,26,.32);
+  border-radius:16px;
+  background:rgba(8,10,14,.62);
+}
+.reward-step-card--direct .channel-head{
+  width:auto;
+  justify-content:center;
+  gap:8px;
+}
+.reward-step-card--direct .channel-head strong{
+  font-size:17px;
+  line-height:1.2!important;
+}
+.reward-step-card--direct .contact-action-arrow{
+  color:#FFBB57;
+  font-size:13px;
+  line-height:1;
+}
+
+@media(max-width:700px){
+  .reward-step-card--team,
+  .reward-step-card--direct{padding-inline:14px}
+  .reward-step-card--team .step-content{display:block}
+  .official-profile-card{
+    grid-template-columns:minmax(0,1fr) minmax(88px,112px);
+    gap:10px;
+    margin-top:12px;
+    padding:10px;
+    border-radius:14px;
+  }
+  .official-profile-copy{font-size:11px;gap:3px}
+  .official-profile-copy > b{font-size:clamp(12px,3.6vw,14px)}
+  .official-profile-copy > span:last-child strong{font-size:11px}
+  .official-profile-media{
+    width:100%;
+    max-width:112px;
+    margin:0;
+  }
+  .reward-step-card--direct .contact-v10-grid{gap:10px}
+  .reward-step-card--direct .contact-channel{
+    min-height:74px!important;
+    height:74px;
+    padding:10px 7px!important;
+  }
+  .reward-step-card--direct .channel-head{gap:6px}
+  .reward-step-card--direct .channel-head strong{font-size:clamp(12px,3.5vw,15px)}
+  .reward-step-card--direct .contact-action-arrow{font-size:11px}
+}
+@media(max-width:360px){
+  .reward-step-card--team,
+  .reward-step-card--direct{padding-inline:10px}
+  .official-profile-card{
+    grid-template-columns:minmax(0,1fr) minmax(78px,100px);
+    gap:8px;
+    padding:9px;
+  }
+  .official-profile-copy > b{font-size:12px}
+  .official-profile-copy > span{font-size:10px}
+  .official-profile-copy > span:last-child strong{font-size:10px}
+  .official-profile-media{width:100%;max-width:100px}
+  .reward-step-card--direct .contact-v10-grid{gap:8px}
+  .reward-step-card--direct .contact-channel{
+    min-height:72px!important;
+    height:72px;
+    padding-inline:6px!important;
+  }
+  .reward-step-card--direct .contact-v7-icon{width:22px!important;height:22px!important}
+  .reward-step-card--direct .channel-head strong{font-size:12px}
+}
