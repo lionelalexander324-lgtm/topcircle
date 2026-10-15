@@ -208,7 +208,7 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 #benefits .benefit-tile-action{display:flex;align-items:center;gap:7px;color:#F9A83D;font:600 13px Inter,sans-serif;margin-top:auto}
 #benefits .benefit-tile:hover{border-color:#F7931A;transform:translateY(-2px);box-shadow:0 0 20px -8px rgba(247,147,26,.4)}
 #benefits .benefit-tile:focus-visible,.contact-channel:focus-visible{outline:2px solid #FFD600;outline-offset:4px}
-.connect-flow{display:flex;flex-direction:column;gap:20px}
+.connect-flow{display:flex;flex-direction:column;gap:32px}
 .connect-intro,.reward-showcase,.contact-v10{width:100%;max-width:850px;margin-inline:auto}
 .reward-showcase{padding:20px 22px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:20px;min-width:0}
 .reward-showcase .showcase-heading{flex:1 1 auto;min-width:0;text-align:start}
@@ -219,7 +219,7 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 .contact-v10-header h3{font-size:clamp(22px,3.2vw,29px);margin:6px 0 4px}
 .contact-v10-header p{font-size:13px;margin:0;color:#94A3B8}
 .contact-v10-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.contact-channel{min-width:0;min-height:173px;padding:20px;border:1px solid rgba(247,147,26,.34);border-radius:20px;background:#0F1115;display:flex;flex-direction:column;align-items:flex-start;gap:8px;text-decoration:none;color:#fff;transition:transform .2s,border-color .2s,background .2s}
+.contact-channel{min-width:0;min-height:140px;padding:16px;border:1px solid rgba(247,147,26,.34);border-radius:20px;background:#0F1115;display:flex;flex-direction:column;align-items:flex-start;gap:8px;text-decoration:none;color:#fff;transition:transform .2s,border-color .2s,background .2s}
 .contact-channel:hover{transform:translateY(-2px);border-color:#F7931A;background:#16181D}
 .contact-channel strong{font-size:17px;line-height:1.2}.channel-detail{color:#94A3B8;font-size:12px;min-width:0;overflow-wrap:anywhere}
 .channel-detail b{font-family:'JetBrains Mono',monospace;color:#FFD79B;white-space:nowrap}
@@ -345,7 +345,7 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 .reward-bundle{max-width:780px}
 .reward-bundle-main{gap:10px}
 .reward-v14-rules{margin-top:18px;border-top:1px solid rgba(247,147,26,.29)}
-.reward-v14-rule{display:flex;align-items:flex-start;gap:13px;padding:16px 2px 2px}
+.reward-v14-rule{display:flex;align-items:flex-start;gap:13px;padding:22px 2px 8px}
 .reward-v14-rule+.reward-v14-rule{border-top:1px solid rgba(255,255,255,.10);margin-top:14px}
 .reward-v14-icon{display:grid;place-items:center;flex:0 0 35px;width:35px;height:35px;background:rgba(247,147,26,.11);border:1px solid rgba(247,147,26,.18);border-radius:10px;color:#FFD600;font-size:20px;line-height:1}
 .reward-v14-rule h4{margin:0 0 4px;color:#fff;font:700 15px/1.4 Inter,system-ui,sans-serif}
@@ -378,3 +378,325 @@ html,body{max-width:100%;overflow-x:clip}body{overflow-x:hidden} .ambient-top{ri
 @media(max-width:700px){.tc-page-footer{padding-top:18px}}
 /* V18: single understated gray footer divider; no gold footer line */
 .tc-footer-rule{background:rgba(255,255,255,.10)}
+
+/* V19: compact, icon-aligned benefit titles; no continuous card sheen. */
+#benefits .benefit-tile-top{display:flex;align-items:center;gap:12px;min-width:0;}
+#benefits .benefit-tile-top h3{margin:0;min-width:0;overflow-wrap:anywhere;line-height:1.25;}
+#benefits .benefit-tile{min-height:132px;justify-content:space-between;}
+#benefits .benefit-tile .icon-tile{flex:0 0 44px;width:44px;height:44px;}
+#benefits .benefit-tile-action{margin-top:auto;}
+.contact-v10-header p{display:block;color:#94A3B8;font-size:13px;line-height:1.6;max-width:660px;margin:8px 0 0;}
+@media(max-width:700px){
+  #benefits .benefit-tile{min-height:116px;padding:14px 12px;}
+  #benefits .benefit-tile-top{gap:9px;align-items:center;}
+  #benefits .benefit-tile-top h3{margin:0;font-size:clamp(13px,3.5vw,15px);line-height:1.28;}
+  #benefits .benefit-tile .icon-tile{flex-basis:38px;width:38px;height:38px;}
+  #benefits .benefit-tile-action{font-size:12px;}
+  .contact-v10-header p{font-size:12.5px;margin-top:6px;}
+}
+@media(max-width:360px){
+  #benefits .benefit-tile-top{gap:7px;}
+  #benefits .benefit-tile-top h3{font-size:13px;}
+  #benefits .benefit-tile .icon-tile{width:34px;height:34px;flex-basis:34px;}
+}
+[dir="rtl"] #benefits .benefit-tile-top{flex-direction:row;}
+
+/* V23 spacing optimization */
+.reward-methods p{margin:0 0 18px;line-height:1.55;}
+.reward-methods p:nth-of-type(2){margin-bottom:10px;}
+#direct-contact-channels{margin-top:18px;}
+.contact-channel{padding:18px 20px;min-height:120px;}
+.channel-head strong{font-size:22px;}
+@media(max-width:700px){.reward-methods p{margin-bottom:16px}.contact-channel{padding:14px 16px;min-height:108px}.channel-head strong{font-size:18px}}
+
+/* V25 Step Card layout */
+.step-card-layout{display:flex;flex-direction:column;gap:18px;margin-top:16px}
+.reward-step-card{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:18px 20px;
+  background:rgba(255,255,255,.025);
+  border:1px solid rgba(247,147,26,.20);
+  border-radius:18px;
+}
+.step-number{
+  flex:0 0 34px;
+  width:34px;height:34px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:rgba(247,147,26,.12);
+  border:1px solid rgba(247,147,26,.35);
+  color:#FFD600;
+  font-weight:700;
+  font-size:13px;
+}
+.step-content strong{
+  display:block;
+  color:#fff;
+  font-size:17px;
+  line-height:1.4;
+  margin-bottom:8px;
+}
+.step-content p{
+  margin:0;
+  color:#CBD1DC;
+  font-size:15px;
+  line-height:1.6;
+}
+@media(max-width:700px){
+ .step-card-layout{gap:14px;margin-top:14px}
+ .reward-step-card{padding:15px 14px;gap:11px;border-radius:16px}
+ .step-number{width:30px;height:30px;flex-basis:30px;font-size:12px}
+ .step-content strong{font-size:14px;margin-bottom:5px}
+ .step-content p{font-size:12.5px;line-height:1.55}
+}
+
+
+/* V26 direct-contact step card refinement */
+.reward-step-card{display:block;}
+.reward-step-card .step-content{width:100%;}
+.step-number{display:none !important;}
+.reward-step-card--team{background:rgba(255,255,255,.022);}
+.reward-step-card--direct{background:linear-gradient(180deg, rgba(247,147,26,.085) 0%, rgba(247,147,26,.045) 100%);border-color:rgba(247,147,26,.34);box-shadow:inset 0 1px 0 rgba(255,214,0,.06);}
+.reward-step-card--team .step-content strong,.reward-step-card--direct .step-content strong{margin-bottom:10px;}
+.reward-step-card--direct .step-content p{margin-bottom:16px;}
+.reward-step-card--direct #official-contact{margin-top:4px;}
+.reward-step-card--direct #direct-contact-channels{margin-top:0;}
+.reward-step-card--direct .contact-v10-grid{gap:12px;}
+.reward-step-card--direct .contact-channel{background:rgba(8,10,14,.62);border-color:rgba(247,147,26,.32);min-height:112px;}
+.reward-step-card--direct .contact-channel:hover{background:rgba(17,20,25,.92);}
+@media(max-width:700px){.reward-step-card--direct .step-content p{margin-bottom:14px;}.reward-step-card--direct .contact-v10-grid{gap:10px;}.reward-step-card--direct .contact-channel{min-height:104px;}}
+
+
+/* V27 restore orange step numbers and remove white inline numerals */
+.reward-step-card{display:flex;align-items:flex-start;gap:14px;}
+.reward-step-card .step-content{width:auto;flex:1;}
+.step-number{display:grid !important;flex:0 0 34px;width:34px;height:34px;place-items:center;border-radius:50%;background:rgba(247,147,26,.12);border:1px solid rgba(247,147,26,.35);color:#FFD600;font-weight:700;font-size:13px;}
+@media(max-width:700px){.reward-step-card{gap:11px;}.step-number{width:30px;height:30px;flex-basis:30px;font-size:12px;}}
+
+
+/* V29 expanded direct contact cards */
+.reward-step-card--direct {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.reward-step-card--direct .contact-v10-grid {
+  gap: 14px;
+  width: 100%;
+}
+.reward-step-card--direct .contact-channel {
+  min-height: 126px;
+  padding: 18px 18px;
+}
+.reward-step-card--direct .channel-action {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+}
+.reward-step-card--direct .channel-action > span:first-child {
+  flex:1;
+}
+@media(max-width:700px){
+ .reward-step-card--direct .contact-channel{
+   min-height:118px;
+   padding:16px;
+ }
+}
+
+
+/* V30 final contact card fix */
+.reward-step-card .step-content strong {
+  display:flex;
+  align-items:center;
+  gap:0;
+}
+.reward-step-card--direct .contact-v10-grid {
+  width:100%;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.reward-step-card--direct .contact-channel {
+  min-width:0;
+  padding:18px 16px;
+  overflow:hidden;
+}
+.reward-step-card--direct .channel-head strong {
+  white-space:nowrap;
+  font-size:22px;
+}
+.reward-step-card--direct .channel-action {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  width:100%;
+}
+.reward-step-card--direct .channel-action > span:first-child {
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+.reward-step-card--direct .contact-action-arrow {
+  flex:0 0 auto;
+}
+.reward-step-card--direct .channel-detail {
+  overflow-wrap:anywhere;
+}
+@media(max-width:700px){
+ .reward-step-card--direct .contact-channel{padding:16px 12px;}
+ .reward-step-card--direct .channel-head strong{font-size:19px;}
+}
+
+/* V31 mobile contact fixes: preserve two columns and contain long labels. */
+.reward-step-card .step-content{
+  min-width:0;
+}
+@media(max-width:700px){
+  .reward-step-card--direct{
+    display:grid;
+    grid-template-columns:30px minmax(0,1fr);
+    column-gap:11px;
+  }
+  .reward-step-card--direct .step-content{
+    display:contents;
+  }
+  .reward-step-card--direct .step-content > strong,
+  .reward-step-card--direct .step-content > p{
+    grid-column:2;
+  }
+  .reward-step-card--direct #official-contact{
+    grid-column:1 / -1;
+    width:100%;
+    min-width:0;
+  }
+  .reward-step-card--direct .contact-v10-grid{
+    grid-template-columns:minmax(0,44fr) minmax(0,56fr);
+    gap:8px;
+  }
+  .reward-step-card--direct .contact-channel{
+    width:100%;
+    min-width:0;
+    padding:14px 10px;
+  }
+  .reward-step-card--direct .channel-head{
+    width:100%;
+    min-width:0;
+    gap:7px;
+  }
+  .reward-step-card--direct .contact-v7-icon{
+    width:24px!important;
+    height:24px!important;
+    font-size:16px;
+    border-radius:8px;
+  }
+  .reward-step-card--direct .whatsapp-v7-icon svg{
+    width:16px;
+    height:16px;
+  }
+  .reward-step-card--direct .channel-head strong{
+    min-width:0;
+    white-space:nowrap;
+    font-size:clamp(14px,4vw,17px);
+    letter-spacing:-.02em;
+  }
+}
+
+/* Locale loading, error recovery, and touch-accessibility states */
+.locale-status[hidden]{display:none}
+.locale-status{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  min-height:48px;
+  margin-top:12px;
+  padding:10px 14px;
+  border:1px solid rgba(247,147,26,.35);
+  border-radius:12px;
+  background:#16181D;
+  color:#f4e4ca;
+  font-size:13px;
+}
+.locale-status.is-error{border-color:rgba(255,90,95,.7);color:#ffd8da}
+.locale-status.is-success{border-color:rgba(255,214,0,.45);color:#ffe99a}
+.locale-status-retry{
+  flex:none;
+  min-width:72px;
+  min-height:44px;
+  padding:8px 16px;
+  border:1px solid #F7931A;
+  border-radius:999px;
+  background:rgba(247,147,26,.12);
+  color:#ffd18b;
+  font:600 13px Inter,system-ui,sans-serif;
+  cursor:pointer;
+}
+.locale-status-retry:hover{background:rgba(247,147,26,.22)}
+.locale-status-retry:active{transform:scale(.98)}
+.locale-status-retry:focus-visible{outline:2px solid #FFD600;outline-offset:3px}
+.brand{min-height:44px}
+.brand,.benefit-tile,.contact-channel,.splash-skip,.locale-status-retry,.lang-wrap select{
+  touch-action:manipulation;
+}
+.benefit-tile:active,.contact-channel:active,.brand:active{transform:scale(.98)}
+@media(max-width:700px){
+  .locale-status{width:calc(100% - 36px);margin-top:8px;padding-inline:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .locale-status-retry:active,.benefit-tile:active,.contact-channel:active,.brand:active{transform:none}
+}
+
+/* V32 concise contact copy and optical title alignment. */
+.reward-step-card--direct .channel-head{
+  align-items:center;
+}
+.reward-step-card--direct .channel-head strong{
+  align-self:center;
+  margin:0!important;
+  line-height:1!important;
+}
+.reward-step-card--direct .channel-detail{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:2px;
+  width:100%;
+  line-height:1.35;
+}
+.reward-step-card--direct .channel-detail > span,
+.reward-step-card--direct .channel-detail > b{
+  display:block;
+  white-space:nowrap;
+}
+.reward-step-card--direct .channel-action{
+  white-space:nowrap;
+  overflow-wrap:normal;
+}
+@media(max-width:360px){
+  .reward-step-card--direct{
+    padding-inline:10px;
+  }
+  .reward-step-card--direct .contact-v10-grid{
+    gap:6px;
+  }
+  .reward-step-card--direct .contact-channel{
+    padding-inline:7px;
+  }
+  .reward-step-card--direct .contact-v7-icon{
+    width:20px!important;
+    height:20px!important;
+    font-size:14px;
+    border-radius:7px;
+  }
+  .reward-step-card--direct .whatsapp-v7-icon svg{
+    width:14px;
+    height:14px;
+  }
+  .reward-step-card--direct .channel-head{
+    gap:3px;
+  }
+  .reward-step-card--direct .channel-head strong{
+    font-size:12px;
+  }
+}
